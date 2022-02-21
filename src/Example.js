@@ -4,12 +4,12 @@ import "./Lexicon.css";
 export default function Example(props) {
   if (props.example) {
     return (
-      <p className="Example">
+      <h3 className="Example">
         <strong>Example:</strong>
-        {props.examples.map(function (example, index) {
-          return <div key={index}>{example}</div>;
+        {props.example.map(function (example, index) {
+          return <p key={index}>{example}</p>;
         })}
-      </p>
+      </h3>
     );
   } else {
     return null;
