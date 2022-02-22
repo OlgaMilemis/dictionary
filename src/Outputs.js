@@ -2,6 +2,7 @@ import React from "react";
 import "./Lexicon.css";
 import Meaning from "./Meaning";
 import Phonetics from "./Phonetics";
+
 export default function Outputs(props) {
   if (props.outputs) {
     return (
