@@ -7,7 +7,7 @@ export default function App() {
       <div className="Container">
         <header className="App-header">Lexicon</header>
         <main>
-          <Lexicon />
+          <Lexicon defaultInputword="Troll" />
         </main>
         <footer className="App-footer">Coded by caro gierich</footer>
       </div>

@@ -1,4 +1,14 @@
-.Lexicon {
-  max-width: 960px;
-  margin: 0 auto;
+.Lexicon section {
+  background: white;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgb(0 0 0/10%);
+  margin: 20px 0;
+}
+
+.Lexicon input {
+  width: 100%;
+  padding: 6px 4px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
 }
