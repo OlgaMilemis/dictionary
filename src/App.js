@@ -9,7 +9,19 @@ export default function App() {
         <main>
           <Lexicon defaultInputword="Troll" />
         </main>
-        <footer className="App-footer">Coded by caro gierich</footer>
+        <footer className="App-footer mt-5">
+          {" "}
+          Coded by caro gierich, open source code on{" "}
+          <a
+            href="https://github.com/OlgaMilemis/dictionary"
+            target="_blank"
+            rel="noreferrer"
+          >
+            {" "}
+            Github
+          </a>
+          .
+        </footer>
       </div>
     </div>
   );
