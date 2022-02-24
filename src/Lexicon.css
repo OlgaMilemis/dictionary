@@ -1,3 +1,8 @@
+.Lexicon h1 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
 .Lexicon section {
   background: white;
   padding: 30px;
@@ -8,7 +13,13 @@
 
 .Lexicon input {
   width: 100%;
-  padding: 6px 4px;
+  padding: 6px 10px;
+  color: #333;
   border: 1px solid #ddd;
   border-radius: 5px;
+}
+
+.Lexicon .hint {
+  font-size: 11px;
+  margin-top: 5px;
 }
