@@ -4,7 +4,8 @@
 
 .Phonetics a {
   background: #ffbed8;
-  border: 1px solid #65c18c;
+  border: 1px solid black;
+  color: black;
   text-decoration: none;
   padding: 8px 15px;
   font-size: 13px;
@@ -15,7 +16,7 @@
 }
 
 .Phonetics a:hover {
-  background: white;
+  background: #f0ffc2;
 }
 
 .Phonetics .text {

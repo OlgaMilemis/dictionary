@@ -1,15 +1,31 @@
 body {
-  background: #c1f4c5;
+  background: #ffbbbb;
 }
 a {
-  color: #65c18c;
+  color: #ffbbbb;
+}
+.App {
+  max-width: 960px;
+  margin: 0 auto;
 }
 
+.App main {
+  text-align: center;
+}
 .App-header {
   margin: 30px 0;
-  font-size: 50px;
+  font-size: 70px;
+  text-align: center;
 }
 .App-footer {
   text-align: center;
   margin: 30px 0;
+}
+
+.App-footer a {
+  color: white;
+}
+
+.App-footer a:hover {
+  color: black;
 }

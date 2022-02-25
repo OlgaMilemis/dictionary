@@ -1,14 +1,18 @@
+.Lexicon {
+  margin-top: 30px;
+}
+
 .Lexicon h1 {
   font-size: 18px;
   font-weight: bold;
   margin-bottom: 20px;
 }
 .Lexicon section {
-  background: white;
+  margin: 30px;
+  background: #ffe4c0;
   padding: 30px;
   border-radius: 5px;
   box-shadow: 0 10px 10px rgb(0 0 0/10%);
-  margin: 20px 0;
 }
 
 .Lexicon input {

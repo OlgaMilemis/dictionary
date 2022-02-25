@@ -28,7 +28,7 @@ export default function Lexicon(props) {
     setOutputs(response.data[0]);
   }
   function showPexelsResult(response) {
-    setImages(response.data.images);
+    setImages(response.data.photos);
   }
 
   function search(event) {
@@ -56,9 +56,9 @@ export default function Lexicon(props) {
             />
           </form>
           <div className="hint">Type a word...</div>
-        </section>
-        <Outputs outputs={outputs} />
+        </section>{" "}
         <Images images={images} />
+        <Outputs outputs={outputs} />
       </div>
     );
   } else {
