@@ -24,6 +24,12 @@ export default function Lexicon(props) {
     event.preventDefault();
     search();
   }
+  function showResult(response) {
+    setOutputs(response.data[0]);
+  }
+  function showPexelsResult(response) {
+    setImages(response.data.images);
+  }
 
   function search(event) {
     let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${inputWord}`;
@@ -36,13 +42,6 @@ export default function Lexicon(props) {
         headers: { Authorization: `Bearer ${pexelsApiKey}` },
       })
       .then(showPexelsResult);
-  }
-
-  function showResult(response) {
-    setOutputs(response.data[0]);
-  }
-  function showPexelsResult(response) {
-    setImages(response.data.images);
   }
 
   if (loaded) {
