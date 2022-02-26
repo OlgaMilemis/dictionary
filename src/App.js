@@ -20,7 +20,6 @@ export default function App() {
             {" "}
             Github
           </a>
-          .
         </footer>
       </div>
     </div>

@@ -10,20 +10,6 @@ export default function Lexicon(props) {
   let [loaded, setLoaded] = useState(false);
   let [images, setImages] = useState(null);
 
-  function updateSearch(event) {
-    event.preventDefault();
-    setInputword(event.target.value);
-  }
-
-  function load() {
-    setLoaded(true);
-    search();
-  }
-
-  function handleWordInput(event) {
-    event.preventDefault();
-    search();
-  }
   function showResult(response) {
     setOutputs(response.data[0]);
   }
@@ -42,6 +28,20 @@ export default function Lexicon(props) {
         headers: { Authorization: `Bearer ${pexelsApiKey}` },
       })
       .then(showPexelsResult);
+  }
+
+  function handleWordInput(event) {
+    event.preventDefault();
+    search();
+  }
+  function updateSearch(event) {
+    event.preventDefault();
+    setInputword(event.target.value);
+  }
+
+  function load() {
+    setLoaded(true);
+    search();
   }
 
   if (loaded) {
