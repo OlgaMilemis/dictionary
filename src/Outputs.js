@@ -9,13 +9,17 @@ export default function Outputs(props) {
       <div className="Outputs">
         <section>
           <h2>{props.outputs.word} </h2>
-          {props.outputs.phonetics.map(function (phonetic, index) {
-            return (
-              <div key={index}>
-                <Phonetic phonetic={phonetic} />
-              </div>
-            );
-          })}
+          {props.outputs.phonetics
+            .filter(function (phonetic) {
+              return phonetic.audio;
+            })
+            .map(function (phonetic, index) {
+              return (
+                <div key={index}>
+                  <Phonetic phonetic={phonetic} />
+                </div>
+              );
+            })}
         </section>
         {props.outputs.meanings.map(function (meaning, index) {
           return (
